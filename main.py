@@ -50,7 +50,6 @@ if __name__ == "__main__":
         for i, (para, score) in enumerate(results, 1):
             print(f"Result {i} - Score: {score:.3f}")
             print("-" * 50)
-            # عرض الفقرة مع تقطيعها إلى أسطر قصيرة 80 حرف
             words = para.split()
             line_length = 0
             line_words = []
@@ -64,3 +63,4 @@ if __name__ == "__main__":
             if line_words:
                 print(" ".join(line_words))
             print("="*50)
+
